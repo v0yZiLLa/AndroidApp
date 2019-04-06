@@ -7,21 +7,26 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/defaultCity_2"
-        android:layout_width="133dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="178dp"
-        android:text="Киев"
+        android:id="@+id/defaultCity2"
+        android:layout_width="159dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="216dp"
+        android:text="Город"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/defaultCity_1"
-        android:layout_width="133dp"
-        android:layout_height="28dp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="115dp" />
+        android:id="@+id/defaultCity"
+        android:layout_width="159dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="148dp"
+        android:text="Город"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addCityButton"
@@ -31,6 +36,28 @@
         android:layout_marginTop="516dp"
         android:text="Add"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/defaultCityTemp"
+        android:layout_width="102dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/defaultCity"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/defaultCityTemp2"
+        android:layout_width="102dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="216dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/defaultCity"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
