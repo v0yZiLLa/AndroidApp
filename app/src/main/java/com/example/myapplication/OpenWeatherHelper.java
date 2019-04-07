@@ -10,7 +10,7 @@ public class OpenWeatherHelper {
 
     private final String API_KEY = "8b3e8129ac9e59e711839ca1e82aae07";
     private final String openWeatherApiURL = "?q=%s&appid=%s&units=metric";
-    private final String BASE_URL = "https://api.openweathermap.org/data/2.5/";
+    private final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather/";
     private Retrofit retrofit;
     private static OpenWeatherHelper mInstance;
 

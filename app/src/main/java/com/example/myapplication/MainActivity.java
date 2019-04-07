@@ -8,6 +8,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DbWorker dbWorker;
     private TextView defaultCity, defaultCityTemp, defaultCity2, defaultCityTemp2;
+    private CityResponseModel weather;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +19,14 @@ public class MainActivity extends AppCompatActivity {
         defaultCityTemp = (TextView) findViewById(R.id.defaultCityTemp);
         defaultCity2 = (TextView) findViewById(R.id.defaultCity2);
         defaultCityTemp2 = (TextView) findViewById(R.id.defaultCityTemp2);
-        new OpenWeather("Vinnytsia");//.weatherData.body().getName());
-//        getWeatherByCityName("Kyiv");
+        weather = new OpenWeather("Vinnytsia").weatherData.body();
+        defaultCity.setText(weather.getName());
+        defaultCityTemp.setText(weather.getMain().getTemp());
+        weather = new OpenWeather("Kyiv").weatherData.body();
+        defaultCity2.setText(weather.getName());
+        defaultCityTemp2.setText(weather.getMain().getTemp());
 
     }
-
-
 
 
 }
